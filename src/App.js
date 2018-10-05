@@ -3,6 +3,7 @@ import React, { Component } from "react";
 import "font-awesome/css/font-awesome.min.css";
 
 import "./App.css";
+import tasks from "./data";
 
 import Table from "./Table";
 
@@ -19,7 +20,7 @@ class App extends Component {
     return (
       <div className="rectangle">
         <p className="title">TO DO LIST</p>
-        <Table />
+        <Table tasks={tasks} />
       </div>
     );
   }
