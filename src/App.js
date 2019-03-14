@@ -1,9 +1,10 @@
 import React, { Component } from "react";
 
 import "font-awesome/css/font-awesome.min.css";
-
 import "./App.css";
 import tasks from "./data";
+
+import TodoList from "./TodoList";
 
 class App extends Component {
   render() {
@@ -27,13 +28,7 @@ class App extends Component {
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>
-                <i className={statusIcon(true)} />
-              </td>
-              <td>Go to the supermarket</td>
-              <td className="middle">MIDDLE</td>
-            </tr>
+            <TodoList tasks={tasks} statusIcon={statusIcon} />
           </tbody>
         </table>
       </div>

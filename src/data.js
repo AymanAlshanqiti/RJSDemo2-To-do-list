@@ -7,12 +7,12 @@ let tasks = [
   {
     task: "Cook dinner",
     done: false,
-    priority: "high"
+    priority: "low"
   },
   {
     task: "Call Mom",
-    done: false,
-    priority: "low"
+    done: true,
+    priority: "high"
   },
   {
     task: "Study for test",
